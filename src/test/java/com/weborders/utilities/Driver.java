@@ -74,7 +74,7 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName(BrowserType.FIREFOX);
-                        driverPool.set(new RemoteWebDriver(new URL("htttp://localhost:4444/wd/hub"), desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities));
                     }catch(Exception e){
                         e.printStackTrace();
                     }
@@ -84,7 +84,7 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName(BrowserType.CHROME);
-                        driverPool.set(new RemoteWebDriver(new URL("htttp://localhost:4444/wd/hub"), desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities));
                     }catch(Exception e){
                         e.printStackTrace();
                     }
