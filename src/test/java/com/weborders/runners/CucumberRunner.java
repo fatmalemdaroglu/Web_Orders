@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/weborders/step_definitions",
         plugin = "json:target/cucumber.json",
-       // tags="@view_all_orders",
+        //tags="@login",
         dryRun =false
 )
 public class CucumberRunner {
